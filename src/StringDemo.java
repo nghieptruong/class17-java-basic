@@ -27,8 +27,26 @@ public class StringDemo {
         //Tom lai: khi so sanh 2 gia tri kieu chuoi ko dung phep toan == (so sanh 2 dia chi tham chiếu)
         //thay vao do phai bat buoc dung .equals (dang so sanh nội dung)
 
+        //Mot so phuong thuc khac cua String (immutable - ko dc phep chinh sua)
+        String greeting = "Hello";
+        //Doi chuoi sang chu in hoa
+        String newGreeting = greeting.toUpperCase();
+        System.out.println(newGreeting); // HELLO
+        System.out.println(greeting); // Hello
 
+        System.out.println("---------------");
+        // Lay ky tu dau tien --> char[] (mảng các ký tự)
+        char[] arrChars = greeting.toCharArray();
+        System.out.println(arrChars[0]); // H
+        System.out.println(arrChars[1]); // e
 
+        //Lay chuoi con
+        String newSubString = greeting.substring(1, 3); // 1: start index, 3: end index --> substring = (start --> end - 1)
+        System.out.println(newSubString); // el
+
+        //Tim kiem
+        boolean isStartWith = greeting.startsWith("Hel");
+        System.out.println(isStartWith); // true
 
     }
 }

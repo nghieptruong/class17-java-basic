@@ -7,7 +7,12 @@ public class IfElseDemo {
         Từ 6 -19 tuổi: 80000
         Từ 20 – 60 tuổi: 100000
         Từ 61 – 120 tuổi: 80000
-        Các trường hợp không nằm trong độ tuổi quy định trên được coi là không hợp lệ*/
+        Các trường hợp không nằm trong độ tuổi quy định trên được coi là không hợp lệ
+            Yeu cau: User nhap sai, yeu cau user nhap lai
+            Neu user nhap sai --> in ra Invalid input! Age should be in [0 - 120]
+            Goi y: try-catch, vong lap
+        */
+
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter age: ");
