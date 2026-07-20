@@ -64,3 +64,9 @@ public class WhileDemo {
 
     }
 }
+
+/*
+    Ham static: input
+    Ham static: check
+    Ham static: run
+ */

@@ -1,15 +1,15 @@
-public class Person {
+public class Person2 {
 
     //Thuoc tinh (fields, attributes)
     String name;
     private int age;
     private String className;
 
-    public Person() {
+    public Person2() {
 
     }
 
-    public Person(String name, int age, String className) {
+    public Person2(String name, int age, String className) {
         this.name = name;
         this.age = age;
         this.className = className;
@@ -21,23 +21,23 @@ public class Person {
      * Get Name : Return name
      * @return name
      */
-    String getName() {
+    public String getName() {
         return name;
     }
 
-    int getAge() {
+    public int getAge() {
         return age;
     }
 
-    void setName(String name) {
+    public void setName(String name) {
         this.name = name;
     }
 
-    void setAge(int age) {
+    public void setAge(int age) {
         this.age = age;
     }
 
-    void memberOf(String className) {
+    public void memberOf(String className) {
         this.className = className;
     }
 
@@ -45,19 +45,19 @@ public class Person {
         this.className = className;
     }
 
-    String getClassName() {
+    public String getClassName() {
         return className;
     }
 
     //overloading
     //2 tham so
-    void setInfo(String name, int age) {
+    public void setInfo(String name, int age) {
         setName(name);
         setAge(age);
     }
 
     //Cung so luong tham so, khac thu tu
-    void setInfo(int age, String name) {
+    public void setInfo(int age, String name) {
 //        setName(name);
 //        setAge(age);
 
@@ -66,18 +66,18 @@ public class Person {
 
     //overloading
     //3 tham so
-    void setInfo(String firstName, String lastName, int age) {
+    public void setInfo(String firstName, String lastName, int age) {
         setName(firstName + " " + lastName);
         setAge(age);
     }
 
     //khac kieu
-    void setInfo(String firstName, String lastName, short age) {
+    public void setInfo(String firstName, String lastName, short age) {
         setName(firstName + " " + lastName);
         setAge(age);
     }
 
-    String getRoleAccess() {
+    public String getRoleAccess() {
         return "Person";
     }
 }

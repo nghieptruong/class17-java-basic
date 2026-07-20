@@ -1,3 +1,7 @@
+package folder1;
+
+import folder2.Person;
+
 public class Student extends Person {
 
     //Thuoc tinh rieng cua Student
@@ -22,6 +26,7 @@ public class Student extends Person {
 
     public void setAvgGrade(double avgGrade) {
         this.avgGrade = avgGrade;
+        getClassName();
     }
 
     //Overriding:
@@ -29,7 +34,7 @@ public class Student extends Person {
     //  2. Cung tham so
     //  3. Pham vi truy cap (modifier access) >= cha
     @Override
-    String getRoleAccess() {
+    public String getRoleAccess() {
         return "Student";
     }
 }
